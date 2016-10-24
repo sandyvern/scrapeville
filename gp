@@ -1,5 +1,5 @@
 git status
 git add .
-git commit -m "added nokogiri gem and initializer"
+git commit -m "newsville scrape"
 git push -u origin master
 git push heroku master
