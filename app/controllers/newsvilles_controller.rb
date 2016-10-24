@@ -1,11 +1,10 @@
 class NewsvillesController < ApplicationController
   before_action :set_newsville, only: [:show, :edit, :update, :destroy]
-  require "open-uri"
+
   # GET /newsvilles
   # GET /newsvilles.json
   def index
-    page = Nokogiri::HTML(open('https://news.google.com/news/'))
-    @newsvilles = page.css('.esc-body')
+    @newsvilles = Newsville.all
   end
 
   # GET /newsvilles/1
@@ -70,6 +69,6 @@ class NewsvillesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def newsville_params
-      params.require(:newsville).permit(:title, :body, :time, :image_url)
+      params.require(:newsville).permit(:title_url, :title, :body, :time, :image_url)
     end
 end
