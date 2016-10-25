@@ -1,4 +1,4 @@
 git add .
-git commit -m "added flatly bootstrap theme/css"
+git commit -m "added comment scaffold"
 git push -u origin master
 git push heroku master
