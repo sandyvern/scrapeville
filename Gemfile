@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'nokogiri'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
+gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug'
