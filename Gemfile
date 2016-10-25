@@ -13,6 +13,7 @@ gem 'nokogiri'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'devise', '~> 4.2'
+gem 'cancancan', '~> 1.15'
 
 group :development, :test do
   gem 'byebug'
