@@ -15,6 +15,7 @@ gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'devise', '~> 4.2'
 gem 'cancancan', '~> 1.15'
 
+
 group :development, :test do
   gem 'byebug'
 end
@@ -23,6 +24,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3'
+  gem 'figaro', '~> 1.1', '>= 1.1.1' # bundle exec figaro install
 end
 
 group :production do
