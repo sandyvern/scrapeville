@@ -15,7 +15,7 @@ gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'devise', '~> 4.2'
 gem 'cancancan', '~> 1.15'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-
+gem 'aws-sdk', '~> 2.7', '>= 2.7.3'
 
 group :development, :test do
   gem 'byebug'
