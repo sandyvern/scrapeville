@@ -1,16 +1,17 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
-  
   load_and_authorize_resource param_method: :my_sanitizer
   load_and_authorize_resource :through => :current_user
+  
 
 
   # GET /comments/new
   def new
     @comment = Comment.new
   end
-  
+
+
   def create
     @newsville = Newsville.find(params[:newsville_id])
     @comment = @newsville.comments.new(comment_params)
@@ -26,6 +27,8 @@ class CommentsController < ApplicationController
       end
     end
   end
+
+
 
   def destroy
     @comment.destroy
