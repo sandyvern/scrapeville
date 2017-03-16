@@ -2,6 +2,10 @@
 
 <h1>Welcome to Newsville</h1>
 
+<div class='text-center'>
+  <%= will_paginate @newsvilles, renderer: BootstrapPagination::Rails %>
+</div>
+
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -39,6 +43,10 @@
     <% end %>
   </tbody>
 </table>
+
+<div class='text-center'>
+  <%= will_paginate @newsvilles, renderer: BootstrapPagination::Rails %>
+</div>
 
 <br>
 
